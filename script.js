@@ -1,6 +1,20 @@
 var yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+/* Product gallery: click a thumbnail to swap the main image */
+(function () {
+  var main = document.getElementById('galleryMain');
+  var thumbs = document.querySelectorAll('.thumb');
+  if (!main || !thumbs.length) return;
+  thumbs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      main.src = btn.dataset.src;
+      thumbs.forEach(function (t) { t.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+    });
+  });
+})();
+
 var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* Nav: blur/background intensify once the page has scrolled */
