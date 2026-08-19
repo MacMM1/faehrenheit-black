@@ -1,12 +1,12 @@
 :root {
-  --bg: #020617;
-  --bg-2: #0a0f1c;
-  --surface: rgba(15, 23, 42, 0.92);
-  --surface-alt: rgba(10, 15, 28, 0.96);
-  --border: #1f2937;
-  --text: #f4f4f5;
-  --text-muted: #9ca3af;
-  --text-dim: #6b7280;
+  --bg: #0a0a0a;
+  --bg-2: #151515;
+  --surface: rgba(21, 21, 21, 0.92);
+  --surface-alt: rgba(17, 17, 17, 0.96);
+  --border: #2a2a2a;
+  --text: #f5f5f5;
+  --text-muted: #a3a3a3;
+  --text-dim: #737373;
   --red: #dc2626;
   --red-bright: #ef4444;
   --red-soft: #fecaca;
@@ -144,7 +144,7 @@ a { color: inherit; }
 .btn-primary:active { transform: scale(0.97); }
 .btn-secondary {
   background: transparent;
-  border-color: #4b5563;
+  border-color: #525252;
   color: var(--text);
 }
 .btn-secondary:hover { border-color: var(--red); color: var(--red-soft); }
@@ -468,7 +468,7 @@ section h2 { letter-spacing: -0.02em; }
 }
 
 .terminal-card {
-  background: #05070d;
+  background: #050505;
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
@@ -478,14 +478,14 @@ section h2 { letter-spacing: -0.02em; }
   display: flex;
   gap: 6px;
   padding: 12px 14px;
-  background: #0a0f1c;
+  background: #151515;
   border-bottom: 1px solid var(--border);
 }
 .terminal-bar span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #374151;
+  background: #404040;
 }
 .terminal-bar span:first-child { background: var(--red); }
 .terminal-body {
